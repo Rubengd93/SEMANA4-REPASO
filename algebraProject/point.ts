@@ -46,4 +46,25 @@ export class Point {
         return resultado;
     }
 
+    public calcularQuadrant(){
+
+        if (Math.sign(this.x) === 0 && Math.sign(this.y) === 0) {
+            return 0;
+            
+        }
+        else if (Math.sign(this.x) === 1 && Math.sign(this.y) === 1 ){
+            return 1;
+        }
+        else if (Math.sign(this.x) === -1 && Math.sign(this.y) === 1 ){
+            return 2;
+        }
+        else if (Math.sign(this.x) === -1 && Math.sign(this.y) === -1 ){
+            return 3;
+        }
+        else if (Math.sign(this.x) === 1 && Math.sign(this.y) === -1 ){
+            return 4;
+        }
+        
+    }
+    
 }
