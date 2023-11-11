@@ -30,7 +30,7 @@ function isRaimbow(colors) {
 }
 isRaimbow(colorsRaimbow);
 let character = ["paco", "alberto", "juan"];
-function add(myWords) {
+export function add(myWords) {
     let resultado = 0;
     for (let i = 0; i < myWords.length; i++) {
         resultado = resultado + myWords[i].length;

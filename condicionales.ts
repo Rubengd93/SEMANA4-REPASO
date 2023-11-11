@@ -108,7 +108,7 @@ printContinent("Argentina")
 
 
 
-function isEven(number:number) {
+export function isEven(number:number) {
 
     if (number % 2 === 0 ) {
         console.log(`El número ${number} es par`);

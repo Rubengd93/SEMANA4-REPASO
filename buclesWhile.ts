@@ -42,3 +42,5 @@ function startWithM(myNames:string[]) {
 let namesArray1 = ["Maria", "Miguel", "Monica"];
 console.log(startWithM(namesArray1));
 
+
+

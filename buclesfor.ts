@@ -62,7 +62,7 @@ isRaimbow(colorsRaimbow)
 
 let character:string[] = ["paco","alberto","juan"];
 
-function add(myWords:string[]):number {
+export function add(myWords:string[]):number {
 
     let resultado:number = 0;   
     
@@ -78,3 +78,5 @@ function add(myWords:string[]):number {
 
 let suma = add(character);
 console.log(suma);
+
+
