@@ -1,39 +1,23 @@
 export class Point {
-    private x: number;
-    private y:number;
-
-    constructor(x:number, y:number){
-
+    constructor(x, y) {
         this.x = x;
         this.y = y;
-
     }
-
-
-    public setx(x: number){
+    setx(x) {
         return this.x = x;
     }
-
-    
-    public sety(y: number) {
+    sety(y) {
         return this.y = y;
     }
-
-    public getx(x: number) {
+    getx(x) {
         return this.x;
     }
-
-    public gety(x: number) {
+    gety(x) {
         return this.y;
     }
-
-    public toString(){
+    toString() {
         let x = this.x.toString();
         let y = this.y.toString();
-
         return `(${x},${y})`;
-
-
     }
-
 }
