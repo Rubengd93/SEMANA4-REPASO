@@ -20,4 +20,12 @@ export class Point {
         let y = this.y.toString();
         return `(${x},${y})`;
     }
+    distanceTolOrigin() {
+        let resultado = Math.sqrt((this.x ** 2) + (this.y ** 2));
+        return resultado;
+    }
+    calculateDistance(anotherPoint) {
+        let resultado = Math.sqrt((anotherPoint.x - this.x) ** 2 + (anotherPoint.y - this.y) ** 2);
+        return resultado;
+    }
 }
