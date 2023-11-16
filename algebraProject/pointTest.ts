@@ -19,8 +19,12 @@ console.log(distancePoint);
 let pointQuadrant = pointTwo.calcularQuadrant();
 console.log(pointQuadrant);
 
+let  pointFour = new Point(7,5);
 
-let allPoint = [pointOne,pointTwo, pointThree];
-let currentPoint = new Point(2,3);
+let allPoint = [pointOne, pointTwo, pointThree];
+
+console.log(pointFour.calculateNearest(allPoint));
+
+
 
 

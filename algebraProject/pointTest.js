@@ -1,6 +1,7 @@
 import { Point } from "./point.js";
 let pointOne = new Point(3, 4);
 let pointTwo = new Point(-4, 5);
+let pointThree = new Point(-4, 5);
 let coordinates = pointOne.toString();
 console.log(coordinates);
 let distance = pointOne.distanceTolOrigin();
@@ -9,3 +10,6 @@ let distancePoint = pointOne.calculateDistance(pointTwo);
 console.log(distancePoint);
 let pointQuadrant = pointTwo.calcularQuadrant();
 console.log(pointQuadrant);
+let pointFour = new Point(7, 5);
+let allPoint = [pointOne, pointTwo, pointThree];
+console.log(pointFour.calculateNearest(allPoint));
