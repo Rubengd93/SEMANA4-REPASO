@@ -66,5 +66,42 @@ export class Point {
         }
         
     }
+
+    public calculateNearest(point:Point[]):Point{
+
+        let near = this.calculateDistance(point[0]);
+        let match = point[0]; 
+
+        for (let i = 0; i < point.length; i++) {
+            
+           let result = this.calculateDistance(point[i]);
+
+            if (result < near) {
+                
+                near = result;
+                match = point[i];
+                
+            }
+        
+
+        }
+        return match;
+        
+    }
+
     
 }
+
+let  pointOne = new Point(2,3);
+let  pointTwo = new Point(3,4);
+let  pointThree = new Point(5,8);
+
+let  pointFour = new Point(7,5);
+
+let allPoint = [pointOne, pointTwo, pointThree];
+
+console.log(pointFour.calculateNearest(allPoint));
+
+
+
+
